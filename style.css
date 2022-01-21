@@ -1,0 +1,155 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: poppins;
+  background-color: #ddd;
+  line-height: 1.65;
+  padding-bottom: 1000px;
+}
+
+/* bagian kontainer satu */
+
+.container-satu {
+  width: 800px;
+  margin: 50px auto;
+  background-color: #fff;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+}
+
+.kolom-utama {
+  flex: 3;
+  order: 2;
+}
+
+.sidebar-satu {
+  flex: 1;
+  order: 1;
+}
+
+.sidebar-dua {
+  flex: 1;
+  order: 3;
+}
+
+/* latihan 2  */
+
+.container-dua {
+  margin: 50px auto;
+  max-width: 800px;
+}
+
+.layanan {
+  padding: 20px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+
+.layanan.satu {
+  background-color: rgb(99, 241, 194);
+}
+
+.layanan.dua {
+  background-color: rgb(100, 241, 147);
+}
+
+.layanan.tiga {
+  background-color: rgb(52, 218, 94);
+}
+
+/* latihan 3 */
+.container-tiga {
+  max-width: 800px;
+  margin: 60px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.thumbnail {
+  width: 50%;
+  padding-left: 2px;
+}
+.thumbnail img {
+  width: 100%;
+}
+
+/* latihan empat */
+
+.container-empat {
+  width: 800px;
+  margin: 50px auto;
+  display: flex;
+}
+
+.card {
+  border: 1px solid rgb(56, 56, 56);
+  border-radius: 10px;
+  background-color: #eeeeee;
+  overflow: hidden;
+  margin: 10px;
+  flex: 1;
+}
+
+.card .header {
+  height: 150px;
+  background-color: #666;
+}
+
+.card .content {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.card.besar {
+  transform: scale(1.12);
+}
+
+/* akhir dari latihan 4 */
+
+/* latihan 5 */
+
+.container-lima {
+  width: 500px;
+  height: 500px;
+  margin: 50px auto;
+  border: 4px solid black;
+  display: flex;
+}
+
+.kotak {
+  width: 100px;
+  height: 100px;
+  background-color: salmon;
+  color: white;
+  text-align: center;
+  /* line-height: 100px; */
+  margin: auto;
+  display: flex;
+}
+
+.kotak span {
+  margin: auto;
+}
+
+/* responsf */
+
+@media (min-width: 600px) {
+  .container-dua {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .layanan {
+    width: 30%;
+  }
+
+  .thumbnail {
+    width: 25%;
+  }
+}
